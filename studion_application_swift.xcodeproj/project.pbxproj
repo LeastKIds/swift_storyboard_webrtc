@@ -21,6 +21,7 @@
 		55ABCAD127E2E7DF00F69935 /* RoomController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 55ABCAD027E2E7DF00F69935 /* RoomController.swift */; };
 		55B98BDD27E58E530057F168 /* html in Resources */ = {isa = PBXBuildFile; fileRef = 55B98BDC27E58E530057F168 /* html */; };
 		55B98BE027E817F10057F168 /* WebRTCClient.swift in Sources */ = {isa = PBXBuildFile; fileRef = 55B98BDF27E817F10057F168 /* WebRTCClient.swift */; };
+		55B98BE227E83BBC0057F168 /* Drum.swift in Sources */ = {isa = PBXBuildFile; fileRef = 55B98BE127E83BBC0057F168 /* Drum.swift */; };
 		FD8B560E61CF09385DA7DCF2 /* Pods_studion_application_swift.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D2FA7275F045A86E9EE95E16 /* Pods_studion_application_swift.framework */; };
 /* End PBXBuildFile section */
 
@@ -42,6 +43,7 @@
 		55ABCAD027E2E7DF00F69935 /* RoomController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RoomController.swift; sourceTree = "<group>"; };
 		55B98BDC27E58E530057F168 /* html */ = {isa = PBXFileReference; lastKnownFileType = folder; name = html; path = studion_application_swift/repository/Studion/html; sourceTree = "<group>"; };
 		55B98BDF27E817F10057F168 /* WebRTCClient.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WebRTCClient.swift; sourceTree = "<group>"; };
+		55B98BE127E83BBC0057F168 /* Drum.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Drum.swift; sourceTree = "<group>"; };
 		AD4601E1170AC7467889F953 /* Pods-studion_application_swift.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-studion_application_swift.debug.xcconfig"; path = "Target Support Files/Pods-studion_application_swift/Pods-studion_application_swift.debug.xcconfig"; sourceTree = "<group>"; };
 		D2FA7275F045A86E9EE95E16 /* Pods_studion_application_swift.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_studion_application_swift.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
@@ -125,6 +127,7 @@
 			isa = PBXGroup;
 			children = (
 				55ABCACA27E2D71B00F69935 /* User */,
+				55B98BE127E83BBC0057F168 /* Drum.swift */,
 			);
 			path = struct;
 			sourceTree = "<group>";
@@ -288,6 +291,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				55ABCAB027E2CEC500F69935 /* ViewController.swift in Sources */,
+				55B98BE227E83BBC0057F168 /* Drum.swift in Sources */,
 				55B98BE027E817F10057F168 /* WebRTCClient.swift in Sources */,
 				55ABCAD127E2E7DF00F69935 /* RoomController.swift in Sources */,
 				55ABCAAC27E2CEC500F69935 /* AppDelegate.swift in Sources */,

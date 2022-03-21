@@ -208,12 +208,11 @@ final class WebRTCClient: NSObject {
         }
     }
     
-    func set(remoteCandidate: RTCIceCandidate) {
-        print("set ice candidate")
-      self.peerConnection!.add(remoteCandidate)
-    }
-    
-    
+//    func set(remoteCandidate: RTCIceCandidate) {
+//        print("set ice candidate")
+//      self.peerConnection!.add(remoteCandidate)
+//    }
+//
     
     
 }
@@ -285,7 +284,16 @@ extension WebRTCClient: RTCDataChannelDelegate {
   
   func dataChannel(_ dataChannel: RTCDataChannel, didReceiveMessageWith buffer: RTCDataBuffer) {
       
-      print("data channel ?? : \(buffer)")
-    self.delegate?.webRTCClient(self, didReceiveData: buffer.data)
+      print("data channel ?? : \(buffer.data)")
+      
+      let decoder = JSONDecoder()
+      
+      do {
+          let json = try decoder.decode(Drum.key.self, from: buffer.data)
+          print(json)
+      } catch {
+          print("error")
+      }
+      self.delegate?.webRTCClient(self, didReceiveData: buffer.data)
   }
 }
